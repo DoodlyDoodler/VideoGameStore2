@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using VideoGameStore2.Models;
 
 namespace VideoGameStore2.Data
 {
@@ -12,5 +13,6 @@ namespace VideoGameStore2.Data
             : base(options)
         {
         }
+        public DbSet<VideoGameStore2.Models.Game> Game { get; set; }
     }
 }

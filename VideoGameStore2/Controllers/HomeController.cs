@@ -17,7 +17,7 @@ namespace VideoGameStore2.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "mmmmm donuts !!!";
 
             return View();
         }
@@ -26,6 +26,12 @@ namespace VideoGameStore2.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public IActionResult Example (String Genre, String Name)
+        {
+            ViewData["Message"] = "You entered Genre: " + Genre +" Name: "+Name;
             return View();
         }
 
