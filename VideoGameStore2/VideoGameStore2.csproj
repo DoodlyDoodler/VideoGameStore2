@@ -3,7 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-VideoGameStore2-BE47DC97-1A33-4B3C-9628-5828957A1BB3</UserSecretsId>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20190922195634_add-migration Seed Data And create tables.cs" />
+    <Compile Remove="Data\Migrations\20190922195634_add-migration Seed Data And create tables.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190922195832_Seed Data And create tables.cs" />
+    <Compile Remove="Data\Migrations\20190922195832_Seed Data And create tables.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
